@@ -166,7 +166,7 @@ hr {
 <h1>Variables used in the tidy data set</h1>
 
 <p>The variables used in the tidy data set are a subset of the raw datat set. The tidy data set can be found in tidy_set.txt.<br/>
-The variables used in the this set are derived from the features.txt file:</p>
+The variables used in the this set are derived from the features.txt file:  </p>
 
 <pre><code>##  [1] &quot;subjectNumber&quot;               &quot;activity&quot;                   
 ##  [3] &quot;tBodyAcc-mean()-X&quot;           &quot;tBodyAcc-mean()-Y&quot;          
@@ -204,27 +204,27 @@ The variables used in the this set are derived from the features.txt file:</p>
 ## [67] &quot;fBodyBodyGyroJerkMag-mean()&quot; &quot;fBodyBodyGyroJerkMag-std()&quot;
 </code></pre>
 
-<p>Column 1 describes the subjecNumber, ranging from 1 to 30.
-Columns 2 describes the 6 activities:</p>
+<p>Column 1 describes the subjecNumber, ranging from 1 to 30.<br/>
+Columns 2 describes the 6 activities:  </p>
 
 <pre><code>## [1] &quot;walking&quot;           &quot;walkingUpstairs&quot;   &quot;walkingDownstairs&quot;
 ## [4] &quot;sitting&quot;           &quot;standing&quot;          &quot;laying&quot;
 </code></pre>
 
-<p>column 3&hellip;68 decribe the other 66 variables, these are a concatation of following parts:
-time: stands for a variable in the time domain
-freq: stands for a variable in the frequency domain (FFT of time signal)
-Body: part of signal which can not be assigned to gravity acceleration, higher freqencies
-Gravity: part of signal assigned to gravity (Frequency &lt;0.3 Hz).
-Acc: signal from a tri-axial accelerometer.
-Gyro: signal from a tri-axial Gyroscope: angular velocity
-Jerk: 1st derivative to time for Acc and second derivative to time from Gyro
-Magnitude: vectorial sum of X, Y and Z
-Mean: mean of the signal
-Stddev: standard deviation of the signal
-X, Y, Z: 3 mutual perpendicular directions of the signals.</p>
+<p>column 3&hellip;68 decribe the other 66 variables, these are a concatation of following parts:<br/>
+time: stands for a variable in the time domain<br/>
+freq: stands for a variable in the frequency domain (FFT of time signal)<br/>
+Body: part of signal which can not be assigned to gravity acceleration, higher freqencies<br/>
+Gravity: part of signal assigned to gravity (Frequency &lt;0.3 Hz).<br/>
+Acc: signal from a tri-axial accelerometer.<br/>
+Gyro: signal from a tri-axial Gyroscope: angular velocity<br/>
+Jerk: 1st derivative to time for Acc and second derivative to time from Gyro<br/>
+Magnitude: vectorial sum of X, Y and Z<br/>
+Mean: mean of the signal<br/>
+Stddev: standard deviation of the signal<br/>
+X, Y, Z: 3 mutual perpendicular directions of the signals.  </p>
 
-<p>The variables in colums 3..68 are dimensionless (no units), as they are normalised between -1 and +1.</p>
+<p>The variables in colums 3..68 are dimensionless (no units), as they are normalised between -1 and +1.  </p>
 
 </body>
 

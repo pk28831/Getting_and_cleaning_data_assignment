@@ -177,31 +177,31 @@ The raw data set contains 2947 observations for the train dataset and 7352 obser
 
 <h2>How I got from the raw data to the tidy_set.</h2>
 
-<p>Load the required data packages.
-Load the raw data from X<em>train.txt, y_train.txt, subject_train.txt, X_test.txt, y_test.txt, subject_txt.txt, features.txt and labels.txt.
-Give names to headers of data frames and vectors.
-Get one data set:
-        + combine subject</em> and y_ to sub<em>act</em> for test and train
-        + combine sub<em>act</em> and X_ to test cq train
-        + combine test and train to complete set, 10299 observations of 563 variables
-Come to a reduced set:
-        + select only channels which gave a mean and std (standard deviation)
-        + change the names of the columns by replacing
-                + -mean\() by Mean
-                + -std\() by Stddev
-                + BodyBody by Body
-                + starting t by time
-                + starting f by freq
-                + Mag by Magnitude
-                + remove the - sign
-        + change the labels:
-                + change all to lower case
-                + change walkingupstairs in walkingUpstars
-                + change walkingdownstairs in wal;kingDownstairs
-        + replace avtivity number by activity string in new dataframe
-Come to a tidy set:
-        + group_by activity and subjectNummber and summarize the mean and write to tidy_set
-        + write tidy datatable to file tidy_set.txt </p>
+<p>Load the required data packages.<br/>
+Load the raw data from X<em>train.txt, y_train.txt, subject_train.txt, X_test.txt, y_test.txt, subject_txt.txt, features.txt and labels.txt.<br/>
+Give names to headers of data frames and vectors.<br/>
+Get one data set:<br/>
+        * combine subject</em> and y_ to sub<em>act</em> for test and train<br/>
+        * combine sub<em>act</em> and X_ to test cq train<br/>
+        * combine test and train to complete set, 10299 observations of 563 variables<br/>
+Come to a reduced set:<br/>
+        * select only channels which gave a mean and std (standard deviation)<br/>
+        * change the names of the columns by replacing<br/>
+                + -mean\() by Mean<br/>
+                + -std\() by Stddev<br/>
+                + BodyBody by Body<br/>
+                + starting t by time<br/>
+                + starting f by freq<br/>
+                + Mag by Magnitude<br/>
+                + remove the - sign<br/>
+        * change the labels:<br/>
+                + change all to lower case<br/>
+                + change walkingupstairs in walkingUpstars<br/>
+                + change walkingdownstairs in wal;kingDownstairs<br/>
+        * replace avtivity number by activity string in new dataframe<br/>
+Come to a tidy set:<br/>
+        * group_by activity and subjectNummber and summarize the mean and write to tidy_set<br/>
+        * write tidy datatable to file tidy_set.txt   </p>
 
 <p>Remark: the latest version of dplyr make it possible to summarize over more than one group by the command summarise_each. (works only with the English notation)</p>
 
